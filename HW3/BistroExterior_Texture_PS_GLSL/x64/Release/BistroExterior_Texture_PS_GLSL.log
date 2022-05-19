@@ -1,0 +1,19 @@
+﻿  DrawScene.cpp
+C:\Users\cmj09\source\repos\CSE4170\BistroExterior_Texture_PS_GLSL\BistroExterior_Texture_PS_GLSL\DrawScene.cpp(498,34): warning C4244: '=': 'int'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\cmj09\source\repos\CSE4170\BistroExterior_Texture_PS_GLSL\BistroExterior_Texture_PS_GLSL\DrawScene.cpp(503,34): warning C4244: '=': 'int'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\cmj09\source\repos\CSE4170\BistroExterior_Texture_PS_GLSL\BistroExterior_Texture_PS_GLSL\DrawScene.cpp(512,34): warning C4244: '=': 'int'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\cmj09\source\repos\CSE4170\BistroExterior_Texture_PS_GLSL\BistroExterior_Texture_PS_GLSL\DrawScene.cpp(517,34): warning C4244: '=': 'int'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\cmj09\source\repos\CSE4170\BistroExterior_Texture_PS_GLSL\BistroExterior_Texture_PS_GLSL\DrawScene.cpp(575,7): warning C4101: 'filename' :참조되지 않은 지역 변수입니다.
+C:\Users\cmj09\source\repos\CSE4170\BistroExterior_Texture_PS_GLSL\BistroExterior_Texture_PS_GLSL\DrawScene.cpp(1055,6): warning C4101: 'i' :참조되지 않은 지역 변수입니다.
+C:\Users\cmj09\source\repos\CSE4170\BistroExterior_Texture_PS_GLSL\BistroExterior_Texture_PS_GLSL\DrawScene.cpp(1181,6): warning C4101: 'i' :참조되지 않은 지역 변수입니다.
+C:\Users\cmj09\source\repos\CSE4170\BistroExterior_Texture_PS_GLSL\BistroExterior_Texture_PS_GLSL\DrawScene.cpp(1287,6): warning C4101: 'i' :참조되지 않은 지역 변수입니다.
+C:\Users\cmj09\source\repos\CSE4170\BistroExterior_Texture_PS_GLSL\BistroExterior_Texture_PS_GLSL\DrawScene.cpp(1391,6): warning C4101: 'i' :참조되지 않은 지역 변수입니다.
+C:\Users\cmj09\source\repos\CSE4170\BistroExterior_Texture_PS_GLSL\BistroExterior_Texture_PS_GLSL\DrawScene.cpp(1517,6): warning C4101: 'i' :참조되지 않은 지역 변수입니다.
+C:\Users\cmj09\source\repos\CSE4170\BistroExterior_Texture_PS_GLSL\BistroExterior_Texture_PS_GLSL\DrawScene.cpp(1622,6): warning C4101: 'i' :참조되지 않은 지역 변수입니다.
+C:\Users\cmj09\source\repos\CSE4170\BistroExterior_Texture_PS_GLSL\BistroExterior_Texture_PS_GLSL\DrawScene.cpp(1917,8): warning C4101: 'aspect_ratio' :참조되지 않은 지역 변수입니다.
+  코드를 생성하고 있습니다.
+  6 of 146 functions ( 4.1%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    2 functions had inline decision re-evaluated but remain unchanged
+  코드를 생성했습니다.
+  BistroExterior_Texture_PS_GLSL.vcxproj -> C:\Users\cmj09\source\repos\CSE4170\BistroExterior_Texture_PS_GLSL\x64\Release\BistroExterior_Texture_PS_GLSL.exe
