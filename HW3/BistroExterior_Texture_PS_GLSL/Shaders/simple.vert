@@ -1,13 +1,3 @@
-#version 330
-
-uniform mat4 u_ModelViewProjectionMatrix;
-uniform vec3 u_primitive_color;
-
-layout (location = 0) in vec4 a_position;
-out vec4 v_color;
-
-void main(void) {
- 	v_color = vec4(u_primitive_color, 1.0f);
-    gl_Position =  u_ModelViewProjectionMatrix * a_position;
-}
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:922313508cedc61b91bf3ed39b5d7ddb724f6605db3a43c113085e92dcd106e3
+size 275
