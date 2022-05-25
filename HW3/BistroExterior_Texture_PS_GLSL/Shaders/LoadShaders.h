@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7da639b1d8273382667322615a2bf127ec40a7d02e032aa59b44ac0d10f35377
-size 236
+#ifndef __LOAD_SHADERS_H__
+#define __LOAD_SHADERS_H__
+
+#include <GL/gl.h>
+
+typedef struct {
+	GLenum       type;
+	const char*  filename;
+	GLuint       shader;
+} ShaderInfo;
+
+GLuint LoadShaders(ShaderInfo*);
+
+#endif // __LOAD_SHADERS_H__

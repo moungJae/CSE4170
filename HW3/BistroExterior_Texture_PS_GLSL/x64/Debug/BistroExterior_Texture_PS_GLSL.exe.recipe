@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e8260d98643cca34917a3a417f45bc9dd257a116c42c3cf39868f412cb9a501d
-size 354
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>C:\Users\cmj09\source\repos\CSE4170\BistroExterior_Texture_PS_GLSL\x64\Debug\BistroExterior_Texture_PS_GLSL.exe</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:220e84bd93c140034b91136a21068cfb9aa979e6075f2b472deb0b969acc31fc
-size 2381
+﻿  DrawScene.cpp
+C:\usr\CSE4170\include\FreeImage\FreeImage.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+C:\Users\cmj09\source\repos\CSE4170\BistroExterior_Texture_PS_GLSL\BistroExterior_Texture_PS_GLSL\DrawScene.cpp(286,34): warning C4244: '=': 'int'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\cmj09\source\repos\CSE4170\BistroExterior_Texture_PS_GLSL\BistroExterior_Texture_PS_GLSL\DrawScene.cpp(291,34): warning C4244: '=': 'int'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\cmj09\source\repos\CSE4170\BistroExterior_Texture_PS_GLSL\BistroExterior_Texture_PS_GLSL\DrawScene.cpp(300,34): warning C4244: '=': 'int'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\cmj09\source\repos\CSE4170\BistroExterior_Texture_PS_GLSL\BistroExterior_Texture_PS_GLSL\DrawScene.cpp(305,34): warning C4244: '=': 'int'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\cmj09\source\repos\CSE4170\BistroExterior_Texture_PS_GLSL\BistroExterior_Texture_PS_GLSL\DrawScene.cpp(431,7): warning C4101: 'filename' :참조되지 않은 지역 변수입니다.
+C:\Users\cmj09\source\repos\CSE4170\BistroExterior_Texture_PS_GLSL\BistroExterior_Texture_PS_GLSL\DrawScene.cpp(632,8): warning C4101: 'aspect_ratio' :참조되지 않은 지역 변수입니다.
+  main.cpp
+C:\usr\CSE4170\include\FreeImage\FreeImage.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+  LoadScene.cpp
+C:\usr\CSE4170\include\FreeImage\FreeImage.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+  LoadShaders.cpp
+  코드를 생성하고 있습니다...
+  BistroExterior_Texture_PS_GLSL.vcxproj -> C:\Users\cmj09\source\repos\CSE4170\BistroExterior_Texture_PS_GLSL\x64\Debug\BistroExterior_Texture_PS_GLSL.exe

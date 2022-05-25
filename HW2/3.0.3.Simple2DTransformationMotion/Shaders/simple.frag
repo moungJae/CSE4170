@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c389017104aa026ff8b85d2d469a449713f36c30112a0595ceddcb28eb128e6d
-size 133
+#version 330
+
+in vec4 v_color;
+
+layout (location = 0) out vec4 final_color;
+
+void main(void) {
+    final_color = v_color;
+}
