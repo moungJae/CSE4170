@@ -83,7 +83,7 @@ typedef enum {
 
 typedef struct _Camera {
 	glm::vec3 prp, vrp, vup;
-	float pos[3]; 
+	float pos[3];
 	float uaxis[3], vaxis[3], naxis[3];
 	float fovy, aspect_ratio, near_c, far_c, zoom_factor;
 	int move, rotation_axis;
@@ -145,7 +145,7 @@ void set_current_camera(int camera_num) {
 		else if (tiger_Vtime >= 480 && tiger_Vtime < 540) tiger_Ptime = 420;
 		else if (tiger_Vtime >= 540 && tiger_Vtime < 600) tiger_Ptime = tiger_Vtime - 120;
 		else tiger_Ptime = (tiger_Vtime + 660) % 721;
-		
+
 		follow_coordinate = tiger_coordinate[tiger_Ptime] + glm::vec3(0.0f, 0.0f, 300.0f);
 		ViewMatrix = glm::lookAt(follow_coordinate, tiger_coordinate[tiger_Vtime], current_camera.vup);
 		ProjectionMatrix = glm::perspective(current_camera.zoom_factor * current_camera.fovy,
@@ -239,12 +239,12 @@ void initialize_camera(void) {
 	pCamera->vrp = glm::vec3(4424.0f, -2477.0f, 235.0f);
 	pCamera->vup = glm::vec3(0.0f, 0.0f, 1.0f);
 	tmpMatrix = glm::lookAt(pCamera->prp, pCamera->vrp, pCamera->vup);
-	pCamera->vup = glm::vec3(tmpMatrix[0].y, tmpMatrix[1].y, tmpMatrix[2].y); 
+	pCamera->vup = glm::vec3(tmpMatrix[0].y, tmpMatrix[1].y, tmpMatrix[2].y);
 
 	pCamera->move = 0, pCamera->fixed = CAMERA_FIXED;
 	pCamera->fovy = TO_RADIAN * scene.camera.fovy, pCamera->aspect_ratio = scene.camera.aspect;
 	pCamera->near_c = 0.1f; pCamera->far_c = 30000.0f, pCamera->zoom_factor = 1.0f;
-	
+
 	// CAMERA_1 : Tiger View - 2
 	pCamera = &camera_info[CAMERA_1];
 	pCamera->prp = glm::vec3(4557.0f, -4637.0f, 1610.0f);
@@ -675,7 +675,7 @@ void prepare_bistro_exterior(void) {
 		glBindTexture(GL_TEXTURE_2D, 0);
 	}
 	fprintf(stdout, " * Loaded bistro exterior textures into graphics memory.\n\n");
-	
+
 	free(bistro_exterior_vertices);
 }
 
@@ -723,7 +723,7 @@ GLfloat* tiger_vertices[N_TIGER_FRAMES];
 
 Material_Parameters material_tiger;
 bool tiger_stop = false;
-unsigned int tiger_timestamp_scene = 0; 
+unsigned int tiger_timestamp_scene = 0;
 
 void prepare_tiger(void) { // vertices enumerated clockwise
 	int i, n_bytes_per_vertex, n_bytes_per_triangle, tiger_n_total_triangles = 0;
@@ -832,7 +832,7 @@ void draw_my_tiger_20192138(void) {
 		tiger_sin_x = ((float)tiger_time - 90.0f) / 90.0f * 1519.2f;
 		tiger_sin_y = 100.0f * sin(tiger_sin_x / 1519.2f * 360.0f * TO_RADIAN);
 		tiger_sin_rotate = atan(100.0f / 1519.2f * 360.0f * TO_RADIAN * cos(tiger_sin_x / 1519.2f * 360.0f * TO_RADIAN));
-	
+
 		ModelMatrix_Tiger = glm::translate(glm::mat4(1.0f), glm::vec3(2275.0f, -1686.65f, 0.0f));
 		ModelMatrix_Tiger = glm::rotate(ModelMatrix_Tiger, -21.5f * TO_RADIAN, glm::vec3(0.0f, 0.0f, 1.0f));
 		ModelMatrix_Tiger = glm::translate(ModelMatrix_Tiger, glm::vec3(tiger_sin_x, tiger_sin_y, 0.0f));
@@ -978,24 +978,24 @@ void draw_my_ben_20192138(void) {
 	int ben_time = timestamp_scene % 200;
 
 	if (ben_time < 10) {
-		ModelViewMatrix = glm::translate(ViewMatrix, 
+		ModelViewMatrix = glm::translate(ViewMatrix,
 			glm::vec3(-1.0f + (float)ben_time / 10.0f * 401.0f, 1290.0f + (float)ben_time / 10.0f * 410.0f, 20.0f));
 		ModelViewMatrix = glm::rotate(ModelViewMatrix, 150.0f * TO_RADIAN, glm::vec3(0.0f, 0.0f, 1.0f));
 		ModelViewMatrix = glm::rotate(ModelViewMatrix, 90.0f * TO_RADIAN, glm::vec3(1.0f, 0.0f, 0.0f));
 	}
 	else if (ben_time >= 10 && ben_time < 40) {
-		ModelViewMatrix = glm::translate(ViewMatrix, 
-			glm::vec3(400.0f + (float)(ben_time - 10.0f) / 30.0f * 1000.0f, 1700.0f + (float)(ben_time - 10.0f)/ 30.0f * 1700.0f, 10.0f));
+		ModelViewMatrix = glm::translate(ViewMatrix,
+			glm::vec3(400.0f + (float)(ben_time - 10.0f) / 30.0f * 1000.0f, 1700.0f + (float)(ben_time - 10.0f) / 30.0f * 1700.0f, 10.0f));
 		ModelViewMatrix = glm::rotate(ModelViewMatrix, 160.0f * TO_RADIAN, glm::vec3(0.0f, 0.0f, 1.0f));
 		ModelViewMatrix = glm::rotate(ModelViewMatrix, 90.0f * TO_RADIAN, glm::vec3(1.0f, 0.0f, 0.0f));
 	}
-	else if (ben_time >=40 && ben_time < 60) {
+	else if (ben_time >= 40 && ben_time < 60) {
 		ModelViewMatrix = glm::translate(ViewMatrix,
-			glm::vec3(1400.0f - (float)(ben_time - 40.0f) / 20.0f * 63.0f, 3400.0f + (float)(ben_time - 40.0f) / 20.0f * 900.0f,10.0f));
+			glm::vec3(1400.0f - (float)(ben_time - 40.0f) / 20.0f * 63.0f, 3400.0f + (float)(ben_time - 40.0f) / 20.0f * 900.0f, 10.0f));
 		ModelViewMatrix = glm::rotate(ModelViewMatrix, 180.0f * TO_RADIAN, glm::vec3(0.0f, 0.0f, 1.0f));
 		ModelViewMatrix = glm::rotate(ModelViewMatrix, 90.0f * TO_RADIAN, glm::vec3(1.0f, 0.0f, 0.0f));
 	}
-	else if (ben_time >= 60 && ben_time < 65) { 
+	else if (ben_time >= 60 && ben_time < 65) {
 		ModelViewMatrix = glm::translate(ViewMatrix,
 			glm::vec3(1337.0f + 40.0f * (ben_time - 60.0f), 4300.0f + 40.0f * (float)(ben_time - 60.0f), 40.0f * (float)(ben_time - 60.0f)));
 		ModelViewMatrix = glm::rotate(ModelViewMatrix, 145.0f * TO_RADIAN, glm::vec3(0.0f, 0.0f, 1.0f));
@@ -1006,7 +1006,7 @@ void draw_my_ben_20192138(void) {
 		ModelViewMatrix = glm::rotate(ModelViewMatrix, 145.0f * TO_RADIAN, glm::vec3(0.0f, 0.0f, 1.0f));
 	}
 	else if (ben_time >= 100 && ben_time < 120) {
-		ModelViewMatrix = glm::translate(ViewMatrix, 
+		ModelViewMatrix = glm::translate(ViewMatrix,
 			glm::vec3(1537.0f + (float)(ben_time - 100.0f) / 20.0f * 423.0f, 4500.0f - (float)(ben_time - 100.0f) / 20.0f * 610.0f, 650.0f));
 		ModelViewMatrix = glm::rotate(ModelViewMatrix, 145.0f * TO_RADIAN, glm::vec3(0.0f, 0.0f, 1.0f));
 		ModelViewMatrix = glm::rotate(ModelViewMatrix, -90.0f * TO_RADIAN, glm::vec3(0.0f, 1.0f, 0.0f));
@@ -1017,7 +1017,7 @@ void draw_my_ben_20192138(void) {
 		ModelViewMatrix = glm::rotate(ModelViewMatrix, -180.0f * TO_RADIAN, glm::vec3(0.0f, 1.0f, 0.0f));
 	}
 	else if (ben_time >= 155 && ben_time < 160) {
-		ModelViewMatrix = glm::translate(ViewMatrix, glm::vec3(1960.0f - (float)(ben_time - 155.0f) / 5.0f * 116.0f, 
+		ModelViewMatrix = glm::translate(ViewMatrix, glm::vec3(1960.0f - (float)(ben_time - 155.0f) / 5.0f * 116.0f,
 			3890.0f - (float)(ben_time - 155.0f) / 5.0f * 94.0f, 200.0f - (float)(ben_time - 155.0f) / 5.0f * 200.0f));
 		ModelViewMatrix = glm::rotate(ModelViewMatrix, 145.0f * TO_RADIAN, glm::vec3(0.0f, 0.0f, 1.0f));
 		ModelViewMatrix = glm::rotate(ModelViewMatrix, -180.0f * TO_RADIAN, glm::vec3(0.0f, 1.0f, 0.0f));
@@ -1147,9 +1147,9 @@ void draw_my_dragon_20192138(void) {
 	}
 	else {
 		dragon_tan_x = ((float)dragon_time - 100.0f) / 40.0f * 200.0f;
-		dragon_tan_z = 300.0f * tan(dragon_tan_x / 200.0f * 90.0f * TO_RADIAN); 
+		dragon_tan_z = 300.0f * tan(dragon_tan_x / 200.0f * 90.0f * TO_RADIAN);
 		dragon_tan_rotate = 0.422371f - atan(300.0f / 200.0f * 90.0f * TO_RADIAN / (cos(dragon_tan_x / 200.0f * 90.0f * TO_RADIAN) * cos(dragon_tan_x / 200.0f * 90.0f * TO_RADIAN)));
-	
+
 		ModelViewMatrix = glm::translate(ViewMatrix, glm::vec3(-2329.2f, 1564.2f, 0.0f));
 		ModelViewMatrix = glm::rotate(ModelViewMatrix, 135.0f * TO_RADIAN, glm::vec3(0.0f, 0.0f, 1.0f));
 		ModelViewMatrix = glm::translate(ModelViewMatrix, glm::vec3(dragon_tan_x, 0.0f, 300.0f + dragon_tan_z));
@@ -1771,7 +1771,7 @@ void display(void) {
 	draw_bistro_exterior();
 
 	// object에 texture mapping을 하기 위한 operation
-	set_texture(); 
+	set_texture();
 
 	// dynamic object : tiger, ben, dragon
 	draw_my_tiger_20192138();
@@ -1803,14 +1803,22 @@ void timer_scene(int value) {
 
 void keyboard(unsigned char key, int x, int y) {
 	switch (key) {
+	case 'p':
+		flag_polygon_fill = 1 - flag_polygon_fill;
+		if (flag_polygon_fill)
+			glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+		else
+			glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+		glutPostRedisplay();
+		break;
 	case 'm':
 		set_current_camera(CAMERA_M);
 		glutPostRedisplay();
 		break;
 	case 's':
-		if (tiger_stop == false) 
+		if (tiger_stop == false)
 			tiger_stop = true;
-		else 
+		else
 			tiger_stop = false;
 		break;
 	case 'x':
@@ -1900,7 +1908,7 @@ void mouseWheel(int button, int dir, int x, int y) {
 		ViewProjectionMatrix = ProjectionMatrix * ViewMatrix;
 		glutPostRedisplay();
 	}
-	
+
 }
 
 void mouse(int button, int state, int x, int y) {
@@ -1919,7 +1927,7 @@ void reshape(int width, int height) {
 	glViewport(0, 0, width, height);
 
 	current_camera.aspect_ratio = (float)width / height;
-	ProjectionMatrix = glm::perspective(current_camera.zoom_factor * current_camera.fovy, 
+	ProjectionMatrix = glm::perspective(current_camera.zoom_factor * current_camera.fovy,
 		current_camera.aspect_ratio, current_camera.near_c, current_camera.far_c);
 	ViewProjectionMatrix = ProjectionMatrix * ViewMatrix;
 
@@ -2000,7 +2008,7 @@ void initialize_lights(void) { // follow OpenGL conventions for initialization
 void initialize_flags(void) {
 	flag_fog = 0;
 	flag_tiger_animation = 1;
-	flag_polygon_fill = 1;
+	flag_polygon_fill = 0;
 
 	glUseProgram(h_ShaderProgram_TXPS);
 	glUniform1i(loc_flag_fog, flag_fog);
@@ -2066,7 +2074,7 @@ void set_Tiger_Camera() {
 void initialize_OpenGL(void) {
 	glEnable(GL_MULTISAMPLE);
 	glEnable(GL_DEPTH_TEST);
-	glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+	glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 	glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 
 	ViewMatrix = glm::mat4(1.0f);
@@ -2124,7 +2132,7 @@ void set_up_scene_lights(void) {
 	glUniform4fv(loc_light[0].specular_color, 1, light[0].specular_color);
 
 	glUniform1i(loc_light[1].light_on, light[1].light_on);
-	
+
 	// need to supply position in EC for shading
 	glm::vec4 position_EC = ViewMatrix * glm::vec4(light[1].position[0], light[1].position[1],
 		light[1].position[2], light[1].position[3]);
@@ -2132,7 +2140,7 @@ void set_up_scene_lights(void) {
 	glUniform4fv(loc_light[1].ambient_color, 1, light[1].ambient_color);
 	glUniform4fv(loc_light[1].diffuse_color, 1, light[1].diffuse_color);
 	glUniform4fv(loc_light[1].specular_color, 1, light[1].specular_color);
-	
+
 	// need to supply direction in EC for shading in this example shader
 	// note that the viewing transform is a rigid body transform
 	// thus transpose(inverse(mat3(ViewMatrix)) = mat3(ViewMatrix)
@@ -2204,7 +2212,7 @@ void greetings(char* program_name, char messages[][256], int n_message_lines) {
 #define N_MESSAGE_LINES 15
 void drawScene(int argc, char* argv[]) {
 	char program_name[64] = "Sogang CSE4170 Bistro Exterior Scene";
-	char messages[N_MESSAGE_LINES][256] = { 
+	char messages[N_MESSAGE_LINES][256] = {
 		"    - Keys used:",
 		"		'0' : set the camera for tiger view(1)",
 		"		'1' : set the camera for tiger view(2)",
@@ -2214,7 +2222,7 @@ void drawScene(int argc, char* argv[]) {
 		"		't' : set the moving camera for tiger's eye",
 		"		's' : set the tiger stop or move",
 		"		'x' : set the x-axis direction",
-		"		'y' : set the y-axis direction",	
+		"		'y' : set the y-axis direction",
 		"		'z' : set the z-axis direction",
 		"		'u' : set the u-axis rotation",
 		"		'v' : set the v-axis rotation",
