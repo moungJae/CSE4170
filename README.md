@@ -21,3 +21,7 @@
 
 ##### 4. 세상 이동 카메라
 <img src="https://user-images.githubusercontent.com/81675254/169249488-d3fad35e-3562-4458-846c-4db329e13b44.gif" width="600" height="400">
+
+------------
+### HW 4: OpenGL Lighting Equation 요약 설명
+------------
