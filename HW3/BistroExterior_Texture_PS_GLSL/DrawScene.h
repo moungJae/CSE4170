@@ -1,11 +1,3 @@
-﻿//
-//  DrawScene.h
-//
-//  Written for CSE4170
-//  Department of Computer Science and Engineering
-//  Copyright © 2022 Sogang University. All rights reserved.
-//
-
-#pragma once
-
-void drawScene(int argc, char* argv[]);
+version https://git-lfs.github.com/spec/v1
+oid sha256:1d71acf49a8e6ddd3eb20c9b1b403d8c4e8a2fd8d16c9239efc044420da2ddc0
+size 229

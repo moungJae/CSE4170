@@ -1,19 +1,3 @@
-﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(514,5): warning MSB8028: 중간 디렉터리(x64\Debug\)에 다른 프로젝트(3.0.3.Simple2DTransformationMotion.vcxproj)에서 공유하는 파일이 포함되어 있습니다.  이로 인해 잘못된 정리 및 다시 빌드 동작이 수행될 수 있습니다.
-  HW2_S20192138.cpp
-C:\Users\cmj09\source\repos\CSE4170\HW2_S20192138\3.0.3.Simple2DTransformationMotion\objects.h(487,76): warning C4305: '초기화 중': 'double'에서 'GLfloat'(으)로 잘립니다.
-C:\Users\cmj09\source\repos\CSE4170\HW2_S20192138\3.0.3.Simple2DTransformationMotion\objects.h(488,85): warning C4305: '초기화 중': 'double'에서 'GLfloat'(으)로 잘립니다.
-C:\Users\cmj09\source\repos\CSE4170\HW2_S20192138\3.0.3.Simple2DTransformationMotion\objects.h(490,97): warning C4305: '초기화 중': 'double'에서 'GLfloat'(으)로 잘립니다.
-C:\Users\cmj09\source\repos\CSE4170\HW2_S20192138\3.0.3.Simple2DTransformationMotion\HW2_S20192138.cpp(56,39): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\cmj09\source\repos\CSE4170\HW2_S20192138\3.0.3.Simple2DTransformationMotion\HW2_S20192138.cpp(57,39): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\cmj09\source\repos\CSE4170\HW2_S20192138\3.0.3.Simple2DTransformationMotion\HW2_S20192138.cpp(225,13): warning C4244: '초기화 중': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\cmj09\source\repos\CSE4170\HW2_S20192138\3.0.3.Simple2DTransformationMotion\HW2_S20192138.cpp(234,64): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\cmj09\source\repos\CSE4170\HW2_S20192138\3.0.3.Simple2DTransformationMotion\HW2_S20192138.cpp(235,66): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\cmj09\source\repos\CSE4170\HW2_S20192138\3.0.3.Simple2DTransformationMotion\HW2_S20192138.cpp(238,64): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\cmj09\source\repos\CSE4170\HW2_S20192138\3.0.3.Simple2DTransformationMotion\HW2_S20192138.cpp(239,66): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\cmj09\source\repos\CSE4170\HW2_S20192138\3.0.3.Simple2DTransformationMotion\HW2_S20192138.cpp(242,64): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\cmj09\source\repos\CSE4170\HW2_S20192138\3.0.3.Simple2DTransformationMotion\HW2_S20192138.cpp(243,65): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\cmj09\source\repos\CSE4170\HW2_S20192138\3.0.3.Simple2DTransformationMotion\HW2_S20192138.cpp(246,64): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\cmj09\source\repos\CSE4170\HW2_S20192138\3.0.3.Simple2DTransformationMotion\HW2_S20192138.cpp(247,65): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  LoadShaders.cpp
-  코드를 생성하고 있습니다...
-  3.0.3.Simple2DTransformationMotion.vcxproj -> C:\Users\cmj09\source\repos\CSE4170\HW2_S20192138\x64\Debug\HW2_S20192138.exe
+version https://git-lfs.github.com/spec/v1
+oid sha256:841ec52782ddeec4e676ba86e83b8b3453c68f6afe3a41cbe3b3ff4a4f0e9938
+size 3580

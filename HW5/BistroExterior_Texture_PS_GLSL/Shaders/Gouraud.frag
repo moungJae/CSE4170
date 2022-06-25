@@ -1,8 +1,3 @@
-#version 400
-
-in vec4 v_shaded_color;
-layout (location = 0) out vec4 final_color;
-
-void main(void) {
-	final_color = v_shaded_color; 
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:28e4f9a0c098374c85952d2d2ac2e41bb4137a7fdc4a78f25517bbdecb746cd3
+size 134

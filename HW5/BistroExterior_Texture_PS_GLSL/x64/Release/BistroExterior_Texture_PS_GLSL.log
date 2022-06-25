@@ -1,17 +1,3 @@
-﻿  DrawScene.cpp
-C:\Users\cmj09\source\repos\CSE4170\BistroExterior_Texture_PS_GLSL\BistroExterior_Texture_PS_GLSL\DrawScene.cpp(599,7): warning C4101: 'filename' :참조되지 않은 지역 변수입니다.
-C:\Users\cmj09\source\repos\CSE4170\BistroExterior_Texture_PS_GLSL\BistroExterior_Texture_PS_GLSL\DrawScene.cpp(1052,6): warning C4101: 'i' :참조되지 않은 지역 변수입니다.
-C:\Users\cmj09\source\repos\CSE4170\BistroExterior_Texture_PS_GLSL\BistroExterior_Texture_PS_GLSL\DrawScene.cpp(1183,6): warning C4101: 'i' :참조되지 않은 지역 변수입니다.
-C:\Users\cmj09\source\repos\CSE4170\BistroExterior_Texture_PS_GLSL\BistroExterior_Texture_PS_GLSL\DrawScene.cpp(1265,6): warning C4101: 'i' :참조되지 않은 지역 변수입니다.
-C:\Users\cmj09\source\repos\CSE4170\BistroExterior_Texture_PS_GLSL\BistroExterior_Texture_PS_GLSL\DrawScene.cpp(1365,6): warning C4101: 'i' :참조되지 않은 지역 변수입니다.
-C:\Users\cmj09\source\repos\CSE4170\BistroExterior_Texture_PS_GLSL\BistroExterior_Texture_PS_GLSL\DrawScene.cpp(1506,45): warning C4305: '=': 'double'에서 'float'(으)로 잘립니다.
-C:\Users\cmj09\source\repos\CSE4170\BistroExterior_Texture_PS_GLSL\BistroExterior_Texture_PS_GLSL\DrawScene.cpp(1465,6): warning C4101: 'i' :참조되지 않은 지역 변수입니다.
-C:\Users\cmj09\source\repos\CSE4170\BistroExterior_Texture_PS_GLSL\BistroExterior_Texture_PS_GLSL\DrawScene.cpp(1566,6): warning C4101: 'i' :참조되지 않은 지역 변수입니다.
-C:\Users\cmj09\source\repos\CSE4170\BistroExterior_Texture_PS_GLSL\BistroExterior_Texture_PS_GLSL\DrawScene.cpp(1858,43): warning C4305: '=': 'double'에서 'float'(으)로 잘립니다.
-C:\Users\cmj09\source\repos\CSE4170\BistroExterior_Texture_PS_GLSL\BistroExterior_Texture_PS_GLSL\DrawScene.cpp(2176,8): warning C4101: 'aspect_ratio' :참조되지 않은 지역 변수입니다.
-  코드를 생성하고 있습니다.
-  0 of 161 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
-  코드를 생성했습니다.
-  BistroExterior_Texture_PS_GLSL.vcxproj -> C:\Users\cmj09\source\repos\CSE4170\BistroExterior_Texture_PS_GLSL\x64\Release\BistroExterior_Texture_PS_GLSL.exe
+version https://git-lfs.github.com/spec/v1
+oid sha256:03e00801ce6ab81e8911f46e7a4d5fe7b032096098cc1788c7041fd48e2a4e05
+size 2346
